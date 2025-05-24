@@ -1,4 +1,5 @@
 import New from "./Function"
+//function name should start with CAPS in both Vite and React
 function App() {
   return (
     //only one element can be returned and not any other <p> or <h1>
