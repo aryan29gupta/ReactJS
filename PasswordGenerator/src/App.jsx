@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
+// Components often need to change what’s on the screen as a result of an interaction. (useState)
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 
 
   //useRef hook (for copy button)
+  //To create a link between copy button and password,just selection
   const passwordRef = useRef(null)
   
   const passwordGenerator = useCallback(() => {
@@ -36,8 +38,11 @@ function App() {
   },
   [password])
 
-  
-  useEffect(() => {passwordGenerator()},[length,numberAllowed,charAllowed,passwordGenerator])
+  //useEffect is called everytime the page is loaded and also if any change
+  //is done in dependencies i.e length,numberAllowed etc
+  useEffect(() => {
+    passwordGenerator()
+  }, [length,numberAllowed,charAllowed,passwordGenerator])
  
   return (
     <>
