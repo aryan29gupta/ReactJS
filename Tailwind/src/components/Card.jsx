@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card(props){
+function Card(props){ //you can directly pass value {username, Object.name = "default"} and use it also give a default value for value not passed
     console.log("username: ",props.username);
     return (
          <div className="max-w-xs p-6 rounded-md shadow-md bg-black">

@@ -14,6 +14,7 @@ function App() {
     <>
     <h1 className = 'text-red-500 bg-green-500 p-4 rounded-4xl mb-2' > This is Tailwind Setup </h1>
     <Card username = "Aryan" Object = {myObj} />
+    <Card username = "Aryan" Object = {myObj} />
     </>
   )
 }
