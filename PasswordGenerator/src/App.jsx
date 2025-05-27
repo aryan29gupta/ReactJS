@@ -3,6 +3,7 @@ import { useState, useCallback, useEffect, useRef } from 'react'
 
 
 function App() {
+  //initial state and set function 
   const [length, setLength] = useState(6)
   const [numberAllowed , setNumberAllowed] = useState(false)
   const [charAllowed , setCharAllowed] = useState(false)
