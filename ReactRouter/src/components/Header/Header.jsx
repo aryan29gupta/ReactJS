@@ -1,6 +1,5 @@
-import React from "react";
-//Link is used in place of <a> because <a> refreshes the page
-import {Link, NavLink} from 'react-router-dom'
+import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Header() {
     return (
@@ -36,47 +35,45 @@ export default function Header() {
                             <li>
                                 <NavLink
                                 to="/"
+                                
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700":"text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 duration-200 border-b ${isActive?"text-orange-700":"text-gray-700"} border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     Home
                                 </NavLink>
+                            </li>
+                            <li>
                                 <NavLink
-                                to="/about"
+                                to='/about'
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700":"text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 duration-200 border-b ${isActive?"text-orange-700":"text-gray-700"} border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     About
                                 </NavLink>
-                                <NavLink
-                                to="/contact"
+                            </li>
+                            <li>
+                            <NavLink
+                                to='/Contact'
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700":"text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 duration-200 border-b ${isActive?"text-orange-700":"text-gray-700"} border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
-                                    Contact Us
+                                    Contact
                                 </NavLink>
-                                <NavLink
-                                to="user/:userid"
+                            </li>
+                            <li>
+                            <NavLink
+                                to='/Github'
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700":"text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                                    }
-                                >
-                                    User 
-                                </NavLink>
-                                <NavLink
-                                to="github"
-                                    className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700":"text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 duration-200 border-b ${isActive?"text-orange-700":"text-gray-700"} border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     Github
                                 </NavLink>
                             </li>
                             
-                             
                         </ul>
                     </div>
                 </div>
@@ -84,3 +81,6 @@ export default function Header() {
         </header>
     );
 }
+
+
+
