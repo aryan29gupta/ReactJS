@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 function Github(){
     const [data,setData] = useState([])
     useEffect(()=>{
+        //for better optimization use Loader concept of react router to call api 
         fetch('https://api.github.com/users/aryan29gupta')
         .then(response => response.json())
         .then(data => {
