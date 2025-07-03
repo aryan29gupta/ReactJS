@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
   //for updating the value of counter in the UI 
@@ -38,3 +37,4 @@ function App() {
 }
 
 export default App
+ 
